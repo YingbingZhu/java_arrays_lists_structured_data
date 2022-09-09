@@ -17,4 +17,28 @@ public class CaesarCipherTest {
         );
     }
 
+    @Test
+    public void testEncryptNew() {
+        String s1 = "First Legion";
+        Assert.assertEquals(
+                cc.modifiedEncrypt(s1, 23),
+                "Cfopq Ibdflk"
+        );
+        Assert.assertEquals(
+                cc.modifiedEncrypt(s1, 17),
+                "Wzijk Cvxzfe"
+        );
+    }
+
+    @Test
+    public void testEncryptTwoKeys() {
+        String s1 = "First Legion";
+        Assert.assertEquals(
+                cc.encryptTwoKeys(s1, 23, 17),
+                "Czojq Ivdzle"
+        );
+    }
+
+
+
 }

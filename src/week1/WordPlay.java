@@ -47,7 +47,7 @@ public class WordPlay {
         StringBuilder sb = new StringBuilder(phrase);
         for (int i = 0; i < sb.length(); i++) {
             if (Character.toLowerCase(sb.charAt(i)) == Character.toLowerCase(ch)) {
-                if ((i + 1) % 2 == 0) {
+                if (i > 0 && (i + 1) % 2 == 0) {
                     sb.setCharAt(i, '+');
                 } else {
                     sb.setCharAt(i, '*');
