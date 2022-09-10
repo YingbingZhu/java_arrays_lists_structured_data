@@ -87,7 +87,9 @@ public class CaesarCipher {
 
     public static void main(String[] args) {
         CaesarCipher cc = new CaesarCipher();
-        System.out.println(cc.encryptNewChar(25,1));
-        System.out.println(Math.floorMod(5, 3));
+        String s = "Hfs cpwewloj loks cd Hoto kyg Cyy.";
+        String s1 = "At noon be in the conference room with your hat on for a surprise party. YELL LOUD!";
+        System.out.println(cc.encryptTwoKeys(s, 14,24));
+        System.out.println(cc.modifiedEncrypt(s, 15));
     }
 }
